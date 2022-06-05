@@ -70,17 +70,17 @@ sudo chmod +x /usr/local/bin/subspace*
 echo "=================================================="
 
 echo -e "\e[1m\e[32m8. Enter Polkadot JS address to receive rewards \e[0m"
-read -p "Address: " ADDRESS
+read -p "Address: " 16cwVQ3xT2n5R3UWSEqd5Db11UdWiPfxhEXQKbDEg4zBfjcz
 
 echo "=================================================="
 
 echo -e "\e[1m\e[32m9. Enter Subspace Node name \e[0m"
-read -p "Node Name : " NODE_NAME
+read -p "Node Name : " KDTD11
 
 echo "=================================================="
 
 echo -e "\e[1m\e[32m9. Enter Subspace Farmer Plot Size. For example 30G (means 30 Gigabyte) \e[0m"
-read -p "Plot Size : " PLOTSIZE
+read -p "Plot Size : " 1024G
 
 echo "=================================================="
 
@@ -103,7 +103,7 @@ Description=Subspace Node
 
 [Service]
 User=$USER
-ExecStart=subspace-node --chain gemini-1 --execution wasm --pruning archive --validator --in-peers 200 --in-peers-light 200 --out-peers 200 --name '$NODE_NAME'
+ExecStart=subspace-node --chain gemini-1 --execution wasm --pruning archive --validator --in-peers 100 --in-peers-light 100 --out-peers 100 --name '$NODE_NAME'
 Restart=always
 RestartSec=10
 LimitNOFILE=10000
